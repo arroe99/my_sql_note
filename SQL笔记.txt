@@ -1,0 +1,69 @@
+common_table_expression公用表表达式
+
+case用法： 
+case a when cond1 then exp1（else cond2 then exp2） else exp3
+
+如果 expr1 是TRUE (expr1 <> 0 and expr1 <> NULL)，则 IF()的返回值为expr2; 否则返回值则为 expr3。
+IF(expr1,expr2,expr3
+
+假如expr1 不为 NULL，则 IFNULL() 的返回值为 expr1; 否则其返回值为 expr2。
+IFNULL(expr1,expr2) 
+
+
+去重
+SELECT DISTINCT 列名称 FROM 表名称
+
+不等于 <> 或者!=
+
+复杂表达式
+where ( xxx or xxx) and xxx
+
+order by 默认升序 字母的话 从a-z
+
+order by xxx desc 逆序
+
+order by 变量1,变量2
+
+插入新的行
+INSERT INTO 表名称 VALUES (值1, 值2,....)
+INSERT INTO Persons VALUES ('Gates', 'Bill', 'Xuanwumen 10', 'Beijing')
+
+指定插入的列
+INSERT INTO table_name (列1, 列2,...) VALUES (值1, 值2,....)
+INSERT INTO Persons (LastName, Address) VALUES ('Wilson', 'Champs-Elysees')
+
+
+修改表中数据
+UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
+UPDATE Person SET FirstName = 'Fred' WHERE LastName = 'Wilson' 
+修改多列数据，加逗号就行
+UPDATE Person SET Address = 'Zhongshan 23', City = 'Nanjing' WHERE LastName = 'Wilson'
+
+删除整行
+DELETE FROM 表名称 WHERE 列名称 = 值
+DELETE FROM Person WHERE LastName = 'Wilson'
+
+top子句 返回给定数字的记录
+SELECT *
+FROM Persons
+LIMIT 5
+
+SELECT TOP 2 * FROM Persons
+SELECT TOP 50 PERCENT * FROM Persons
+
+where 变量名 (not) like '%'
+通配符
+% 代表零个或多个字符
+_ 代表1个
+
+使用 [charlist] 通配符
+SELECT * FROM Persons
+WHERE City LIKE '[ALN]%'
+WHERE City LIKE '[!ALN]%'
+
+引号里面写引号 要转义
+ 'EUGENE O''NEILL'
+
+
+
+
