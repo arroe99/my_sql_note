@@ -1,3 +1,17 @@
+DBMS database management system 数据库管理系统
+有五种类型：
+层次数据库 hierarchical database HDB
+关系数据库 relational database RDB   ————SQL structured query language 结构化查询语言  RDBMS关系数据库管理系统
+面向对象数据库 object oriented database OODB
+XML数据库 XMLDB
+键值存储数据库 Key-Value Store KVS
+
+行是记录 列是字段
+标准SQL
+DDL data definition language 数据定义语言 包括有 create drop alter 创建 删除 修改 数据库或者表
+DML data manipulation language 数据操纵语言 包括有 select insect updata delete 查询 插入 更新 删除表中的数据   最常用！
+DCL data control language 数据控制语言 commit rollback grant revoke 数据库权限 确认取消什么的?
+
 common_table_expression公用表表达式
 
 case用法： 
