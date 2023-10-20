@@ -1,2 +1,2 @@
-# mine_sql_note
+# my_sql_note
 SQL笔记
